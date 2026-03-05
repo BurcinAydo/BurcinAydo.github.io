@@ -6,23 +6,20 @@
 #
 # NOTE that only one of the CV options should be selected, the first is for the
 #      Markdown formatted page while the second is generated using JSON.
-
+# Sitenin üst kısmındaki ana navigasyon menüsü
 main:
-  - title: "Publications"
+  - title: "Hakkımda"
+    url: /
+
+  - title: "Yayınlar"
     url: /publications/
 
-  - title: "Talks"
-    url: /talks/    
+  - title: "Dersler"
+    url: /teaching/
 
-  - title: "Teaching"
-    url: /teaching/    
-    
-  - title: "Portfolio"
-    url: /portfolio/
-        
-  - title: "Blog Posts"
-    url: /year-archive/
-    
+  - title: "Sunumlar"
+    url: /talks/
+
   - title: "CV"
     url: /cv/
     
