@@ -1,36 +1,24 @@
 ---
 layout: archive
-title: "Publications"
+title: "Yayınlar"
 permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+Burada akademik çalışmalarımı ve makalelerimi bulabilirsiniz.
 
+## Makaleler
 
+* **Aydoğdu, B.** (Yıl). Makale Başlığı Buraya Gelecek. *Dergi Adı*, Cilt(Sayı), Sayfalar.
+* **Aydoğdu, B.** (Yıl). Diğer Bir Makale Başlığı. *Hukuk Kuramı*, Sayı, Sayfa.
 
+## Bildiriler ve Sunumlar
+
+* **Aydoğdu, B.** (2025). Time Banking and Skill Swapping in the Context of Probation. *20th Anniversary of Probation International Congress*, Antalya.
+* **Aydoğdu, B.** (Yıl). SAS 25 "Uncertainty" Sempozyumu Bildirisi.
+
+## Kitap Bölümleri
+
+* **Aydoğdu, B.** (Yıl). Bölüm Başlığı. İçinde: *Kitap Adı*, Editörler, Yayın Evi.
